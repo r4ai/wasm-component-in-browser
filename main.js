@@ -1,7 +1,3 @@
-import "./style.css"
-import javascriptLogo from "./javascript.svg"
-import viteLogo from "/vite.svg"
-import { setupCounter } from "./counter.js"
 import cowsayBuffer from "./cowsay/cowsay.wasm?uint8array"
 import { rollup } from "@rollup/browser"
 
@@ -13,26 +9,6 @@ import preview2_shim_index from "./node_modules/@bytecodealliance/preview2-shim/
 import preview2_shim_io from "./node_modules/@bytecodealliance/preview2-shim/lib/browser/io.js?raw"
 import preview2_shim_random from "./node_modules/@bytecodealliance/preview2-shim/lib/browser/random.js?raw"
 import preview2_shim_sockets from "./node_modules/@bytecodealliance/preview2-shim/lib/browser/sockets.js?raw"
-
-document.querySelector("#app").innerHTML = `
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
-
-setupCounter(document.querySelector("#counter"))
 
 const run = async () => {
   const { generate } = await import("@bytecodealliance/jco/component")
