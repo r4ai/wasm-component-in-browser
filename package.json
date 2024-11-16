@@ -1,0 +1,22 @@
+{
+  "name": "jco",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@bytecodealliance/jco": "1.7.2",
+    "@rollup/browser": "^4.27.0",
+    "@rollup/plugin-virtual": "^3.0.2",
+    "rollup-plugin-wit-component": "^0.2.6"
+  },
+  "devDependencies": {
+    "@bytecodealliance/componentize-js": "0.14.0",
+    "vite": "^5.4.10",
+    "vite-plugin-arraybuffer": "0.0.8"
+  }
+}
