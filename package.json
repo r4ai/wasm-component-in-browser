@@ -10,9 +10,7 @@
   },
   "dependencies": {
     "@bytecodealliance/jco": "1.7.2",
-    "@rollup/browser": "^4.27.0",
-    "@rollup/plugin-virtual": "^3.0.2",
-    "rollup-plugin-wit-component": "^0.2.6"
+    "@rollup/browser": "^4.27.0"
   },
   "devDependencies": {
     "@bytecodealliance/componentize-js": "0.14.0",
