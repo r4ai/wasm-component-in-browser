@@ -2,6 +2,7 @@
  * How to run:
  *
  * ```shell
+ * bun run jco transpile cowsay.wasm -o dist
  * node run.js
  * ```
  */
