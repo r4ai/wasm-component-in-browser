@@ -16,9 +16,6 @@ const run = async () => {
     name: "cowsay",
     noTypescript: true,
     noNodejsCompat: true,
-    tlaCompat: false,
-    base64Cutoff: 4096,
-    validLiftingOptimization: false,
     map: Object.entries(
       // @see https://github.com/bytecodealliance/jco/blob/7b6e3867b02e2546dcd179238f2f1694c981a20c/src/cmd/transpile.js#L156-L166
       {

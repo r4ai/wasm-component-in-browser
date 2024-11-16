@@ -29,11 +29,11 @@ const modules = Object.fromEntries(
   })
 )
 
-await fs.mkdir("./tmp", { recursive: true })
+await fs.mkdir("./browser", { recursive: true })
 for (const [name, buffer] of Object.entries(modules)) {
   if (typeof buffer === "string") {
-    await fs.writeFile(`./tmp/${name}`, buffer)
+    await fs.writeFile(`./browser/${name}`, buffer)
   } else {
-    await fs.writeFile(`./tmp/${name}`, buffer)
+    await fs.writeFile(`./browser/${name}`, buffer)
   }
 }
